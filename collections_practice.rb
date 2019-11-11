@@ -42,7 +42,7 @@ def add_s(array)
     if  index != 1
       array.concat("s")
     else 
-      array[1] << "feet" 
+      array 
     end
   end
 end
