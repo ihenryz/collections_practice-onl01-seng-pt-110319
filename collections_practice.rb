@@ -38,5 +38,15 @@ def sum_array(nums_array)
 end
 
 def add_s(array)
-  array.each_with_index { |array, index| array.concat("s") if index != 1}
+  array.each_with_index.collect do |array, index|
+    if  index != 1
+      array.concat("s")
+    else 
+      array 
+    end
+  end
 end
+
+# def add_s(array)
+#   array.each_with_index { |array, index| array.concat("s") if index != 1}
+# end
